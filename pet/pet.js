@@ -35,11 +35,9 @@ window.addEventListener('load', async () => {
     pet = response.data;
     //  - if error, display it
     if (error) {
-        displayError();
-    } else if (!pet) {
+        alert(error.message + '. ' + 'Please contact the administrator for more information.');
         location.replace('/');
     } else {
-        console.log('display pet');
         displayPet();
     }
     //  - of no pet, redirect to list (home) page
