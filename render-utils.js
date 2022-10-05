@@ -17,7 +17,7 @@ export function renderPet(pet) {
     const p = document.createElement('p');
     p.textContent = pet.bio;
 
-    li.append(img, h2, p);
+    a.append(img, h2, p);
     li.append(a);
 
     return li;
